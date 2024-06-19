@@ -26,3 +26,13 @@
 
  <p>첫째 줄에 입력으로 주어진 N개의 정수 중에 v가 몇 개인지 출력한다.</p>
 
+### ***슈도 코드***
+int number, cNum
+int count;
+
+1. cin >> number
+2. `int *array = new int[number]` 동적 배열 메모리 할당
+3. cin >> cNum
+4. for(int i=0; i<number; i++)
+5. if( cNum == \*(number + i) ) count++;
+6. cout >> count

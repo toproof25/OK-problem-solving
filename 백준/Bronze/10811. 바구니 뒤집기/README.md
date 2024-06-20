@@ -34,3 +34,38 @@
 
  <p>모든 순서를 바꾼 다음에, 가장 왼쪽에 있는 바구니부터 바구니에 적혀있는 순서를 공백으로 구분해 출력한다.</p>
 
+
+### ***의사 코드***
+1. `정수 N, M을 입력받는다`
+2. `동적 배열 크기 N만큼 할당한 후 각 index+1만큼 초기화한다`
+3. `for (M만큼 반복한다)`
+	1. `int start, end 범위를 입력받는다`
+	2. `reverse(array, start, end)` - reverse함수에 피라미터를 넘겨준다
+		1. 방법 1
+			1. `end - start 크기만큼 동적 배열 copy_array 생성`
+			2. `array[end] ~ array[start] 만큼 생성한 배열에 할당`
+			3. `start ~ end 번째를 copy_array의 값으로 교체`
+		2. 방법 2
+			1. `int range = (end-start + 1) / 2` 
+			2. `for (0부터 range 미만까지 반복)`
+				1. `switch_number함수로 start+i, end-i위치와 값을 변경`
+4. `최종 array값을 출력한다`
+5. `동적 배열을 제거`
+
+```cpp
+void switch_number(int array[], int start, int end){
+  int temp = array[start];
+  array[start] = array[end];
+  array[end] = temp;
+}
+```
+
+
+### ***해결 과정(어려움 및 해결 방법)***
+1. `int range = end-start` 범위를 설정하는 과정에서 1, 4라고 하면 range는 3이된다. 하지미나 실질적으로 0, 1, 2, 3으로 4개의 요소들에 해당하므로 3이아닌 4가 되어야 한다. 고로 end-start에 +1을 해준다.
+2. 그렇다면 `int range = (end-start + 1) / 2` 를 설정한다. 변경되는 횟수는 실제 요소 범위에 나누기 2를 한 결과.
+3. 1~2라면 range는 2가되고 체인지 횟수는 1번, 
+4. 1~3라면 range는 3이되고, 
+5. 마찬가지로 체인지 횟수는 1번, 1~4라면 range는 4가 되고, 체인지 횟수는 2번, 
+6. 1~5라면 range는 5가되고, 체인지 횟수는 2번, ...반복
+

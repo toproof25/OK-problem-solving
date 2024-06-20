@@ -40,11 +40,11 @@
 3. `for (M만큼 반복한다)`
 	1. `int start, end 범위를 입력받는다`
 	2. `reverse(array, start, end)` - reverse함수에 피라미터를 넘겨준다
-		~~1. 방법 1~~
+		1. ~~방법 1~~
 			1. `end - start 크기만큼 동적 배열 copy_array 생성`
 			2. `array[end] ~ array[start] 만큼 생성한 배열에 할당`
 			3. `start ~ end 번째를 copy_array의 값으로 교체`
-		**2. 방법 2을 적용**
+		2. **방법 2을 적용**
 			1. `int range = (end-start + 1) / 2` 
 			2. `for (0부터 range 미만까지 반복)`
 				1. `switch_number함수로 start+i, end-i위치와 값을 변경`
@@ -58,6 +58,7 @@ void switch_number(int array[], int start, int end){
   array[end] = temp;
 }
 ```
+
 
 
 ### ***해결 과정(어려움 및 해결 방법)***

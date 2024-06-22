@@ -37,3 +37,6 @@
 			1. `isAlaph = 현재 문자 위치 index`
 			2. `break`
 	3. `isAlpha 출력`
+
+### 순서도
+![image](https://github.com/toproof25/OK-problem-solving/assets/41888060/ac7ba501-10f3-4319-b92d-03a9b82ce655)

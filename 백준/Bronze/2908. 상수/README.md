@@ -30,3 +30,13 @@
 
  <p>첫째 줄에 상수의 대답을 출력한다.</p>
 
+### ***의사 코드***
+1. `string numbers[2] 문자열 2개에 해당하는 배열을 생성`
+2. `for (0~2)`
+	1. `numbers에 각 숫자를 입력받는다`
+3. `string max = max_numbers(numbers)` - 위 문제에서 최대값을 반환하는 함수
+	1. `for (i = 0 ~ 1)`
+		1. `numbers[i]에 문자열 "123"이라면, 1과 3의 위치를 변경한다`
+	2. `if (stoi(numbers[0]) > stoi(numbers[1]) )`
+		1. `두 문자열을 integer로 변환한 후 비교하여 큰 값을 리턴한다`
+4. `max값을 출력한다`

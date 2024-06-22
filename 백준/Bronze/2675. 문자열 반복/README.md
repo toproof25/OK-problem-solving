@@ -28,3 +28,13 @@
 
  <p>각 테스트 케이스에 대해 P를 출력한다.</p>
 
+### ***의사 코드***
+1. `반복 횟수 int number를 입력받는다`
+2. `for (n = number만큼 반복)`
+	1. `int r`
+	2. `string word`
+	3. `r과 word를 입력받는다`
+	4. `for (i = word.length() 만큼 반복)`
+		1. `for (j = r만큼 반복)`
+			1. `word[i]를 출력한다`
+	5. `\n로 줄띄우기`

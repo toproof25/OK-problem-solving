@@ -30,3 +30,9 @@
 
  <p>첫째 줄에 팰린드롬이면 1, 아니면 0을 출력한다.</p>
 
+### ***의사 코드***
+1. `string 문자열을 입력받는다 - string word`
+2. `check_palindrome(word)`
+	1. `for (i = 0 ~ 문자열 길이의 반까지)`
+		1. `if ( word[i] != word[word.size()-i - 1] ) return False`
+	2. `return True`

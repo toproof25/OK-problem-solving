@@ -28,3 +28,6 @@
 
  <p>첫째 줄에 그룹 단어의 개수를 출력한다.</p>
 
+### 순서도
+
+![image](https://github.com/toproof25/OK-problem-solving/assets/41888060/7bf89b37-800b-4d95-9831-e7e8cb6d10ab)

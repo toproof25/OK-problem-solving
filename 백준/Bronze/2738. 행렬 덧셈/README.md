@@ -26,3 +26,5 @@
 
  <p>첫째 줄부터 N개의 줄에 행렬 A와 B를 더한 행렬을 출력한다. 행렬의 각 원소는 공백으로 구분한다.</p>
 
+### 순서도
+![image](https://github.com/toproof25/OK-problem-solving/assets/41888060/6a2842f3-1771-40e5-a8c4-5ec1a458efb6)

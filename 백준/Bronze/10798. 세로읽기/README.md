@@ -46,3 +46,5 @@ P 5 h 3 k x</pre>
 
  <p>영석이가 세로로 읽은 순서대로 글자들을 출력한다. 이때, 글자들을 공백 없이 연속해서 출력한다. </p>
 
+### 순서도
+![image](https://github.com/toproof25/OK-problem-solving/assets/41888060/a7685512-cedf-469a-9534-b914dabc6ad4)

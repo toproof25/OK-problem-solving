@@ -30,3 +30,5 @@
 
  <p>첫째 줄에 색종이가 붙은 검은 영역의 넓이를 출력한다.</p>
 
+### 순서도
+![image](https://github.com/toproof25/OK-problem-solving/assets/41888060/0df2e8a0-4c3b-4b3f-b434-2a17058ac1f2)

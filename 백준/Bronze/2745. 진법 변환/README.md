@@ -32,3 +32,5 @@
 
  <p>첫째 줄에 B진법 수 N을 10진법으로 출력한다.</p>
 
+### 순서도
+![image](https://github.com/toproof25/OK-problem-solving/assets/41888060/5a9b6203-1264-4e49-aedf-47f947d331bc)

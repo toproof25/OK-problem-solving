@@ -30,3 +30,19 @@
 
  <p>첫째 줄에 10진법 수 N을 B진법으로 출력한다.</p>
 
+### ***의사 코드***
+1. `10진수 숫자와 변환할 진법을 입력받는다 - number b`
+2. `change_number(b, number) 함수를 실행한다`
+	1. `if (number / b == 0)`
+		1. `cout << number_to_ASCII(number)`
+		2. `return number`
+	3. `change_number(b, number / b)`
+	4. `cout << number_to_ASCII(number%b)`
+	5. `return number`
+
+**number_to_ASCII 함수** - 연산된 숫자를 숫자 or 알파벳으로 바꾸는 함수(10이상은 A, B, C..)**
+2. `int number_to_ASCII(int number)`
+	1. `if (number가 0~9라면)`
+		1. `char형태로 number + 48를 출력한다`
+	2. `else`
+		1. `char형태로 number+ 55를 출력한다`

@@ -40,7 +40,7 @@
 	4. `cout << number_to_ASCII(number%b)`
 	5. `return number`
 
-**number_to_ASCII 함수** - 연산된 숫자를 숫자 or 알파벳으로 바꾸는 함수(10이상은 A, B, C..)**
+**number_to_ASCII 함수** - 연산된 숫자를 숫자 or 알파벳으로 바꾸는 함수(10이상은 A, B, C..)   
 2. `int number_to_ASCII(int number)`
 	1. `if (number가 0~9라면)`
 		1. `char형태로 number + 48를 출력한다`

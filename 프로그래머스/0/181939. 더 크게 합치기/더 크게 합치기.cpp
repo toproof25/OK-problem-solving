@@ -3,16 +3,28 @@
 
 using namespace std;
 
+
+int digitCount(int number){
+    int remainder;
+    for(int i=10; i <= 10000; i*=10)
+    {
+      remainder = number % i;
+      if (remainder == number)
+      {
+        return i;
+      }
+    }
+    return -1;
+}
+
+
 int solution(int a, int b) {
-    string first = std::to_string(a) + std::to_string(b);
-    string second = std::to_string(b) + std::to_string(a);
-    
-    int first_number = std::stoi(first);
-    int second_number = std::stoi(second);
-    
-    if (first_number > second_number)
-        return first_number;
+    int fNum = digitCount(a);
+    int sNum = digitCount(b);
+
+    if ( a*sNum + b > b*fNum + a)
+      return a*sNum + b;
     else
-        return second_number;
+      return b*fNum + a;
 
 }

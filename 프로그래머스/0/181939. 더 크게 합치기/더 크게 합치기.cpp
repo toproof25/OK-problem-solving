@@ -19,6 +19,7 @@ int digitCount(int number){
 
 
 int solution(int a, int b) {
+
     int fNum = digitCount(a);
     int sNum = digitCount(b);
 
@@ -26,5 +27,4 @@ int solution(int a, int b) {
       return a*sNum + b;
     else
       return b*fNum + a;
-
 }

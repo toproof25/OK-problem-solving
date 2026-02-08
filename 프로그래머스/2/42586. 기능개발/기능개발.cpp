@@ -11,14 +11,12 @@ vector<int> solution(vector<int> progresses, vector<int> speeds) {
     int count = 0;
     int size = progresses.size();
     
-    // 반복 당 하루
     while(index < size)
     {
+        day += ((99 - progresses[index]) / speeds[index])+1;
+        progresses[index] += (day * speeds[index]);
+        
         count = 0;
-        
-        progresses[index] += speeds[index];
-        day++;
-        
         while (progresses[index] >= 100)
         {
             ++count;
